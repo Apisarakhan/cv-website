@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import profilePic from './aj.png';  
 
 // --- DATA SECTION (UPDATED) ---
 
@@ -400,11 +401,7 @@ function App() {
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-sky-400 to-blue-500 rounded-full blur opacity-40 group-hover:opacity-60 transition-opacity animate-pulse"></div>
             <div className="w-40 h-40 md:w-52 md:h-52 rounded-full bg-white border-[6px] border-white shadow-2xl flex items-center justify-center relative z-10 overflow-hidden">
-               <img 
-                 src="aj.png" 
-                 alt="ผศ.ดร.ชโลธร ชูทอง" 
-                 className="w-full h-full object-cover object-top" 
-               />
+               <img src={profilePic} alt="ผศ.ดร.ชโลธร ชูทอง" className="w-full h-full object-cover object-top" />
             </div>
           </motion.div>
 
